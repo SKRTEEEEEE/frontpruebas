@@ -37,6 +37,9 @@ export default function Counter() {
             <Web3Button
               contractAddress={CONTRACT_ADDRESS}
               action={(contract) => contract.call('store', [newValue])}
+              onSubmit={() => setNewValue(0)}
+              onSuccess={() => alert('Saved!')}
+              onError={() => alert('Error!')}
             >
               Set New Value
             </Web3Button>
