@@ -16,8 +16,8 @@ export default function Counter() {
 
   const { data: numValue, isLoading } = useContractRead(contract, 'retrieve');
   return (
-    <div className="bg-neutral-600/20 p-12 rounded-md border-slate-800 border-2">
-      <h1 className="text-center text-xl font-black py-8">
+    <div className="flex flex-col bg-neutral-600/20 p-12 rounded-md border-slate-800 border-2 gap-8">
+      <h1 className="text-center text-xl font-black">
         {isLoading ? '0' : numValue.toNumber()}
       </h1>
       <div className="flex flex-col">

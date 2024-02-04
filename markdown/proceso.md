@@ -2,6 +2,10 @@
 
 ## Commits
 
+### 2wrappers
+
+Implementacion de dos wrappers
+
 ### manage-actions
 
 Manejar los diferentes estados de la accion en el contrato basico

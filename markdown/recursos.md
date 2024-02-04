@@ -23,6 +23,7 @@
 ### Librerias y frameworks
 
 - [TailwindCss](https://tailwindcss.com/): Tailwind docs
+- [Chakra UI](https://chakra-ui.com/getting-started/nextjs-app-guide): Documentation de ChakraUI(integracion en NextJs)
 
 #### [ThirWebDocs](https://portal.thirdweb.com/): Documentación de ThirdWeb.
 
