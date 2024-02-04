@@ -22,4 +22,8 @@
 
 ### Librerias y frameworks
 
-- [ThirWebDocs](https://portal.thirdweb.com/): Documentación para el uso de ThirdWeb.
+- [TailwindCss](https://tailwindcss.com/): Tailwind docs
+
+#### [ThirWebDocs](https://portal.thirdweb.com/): Documentación de ThirdWeb.
+
+- [ThirdWebDefaultChains](https://portal.thirdweb.com/react/v4/ThirdwebProvider#default-chains): Cadenas que admite por defecto el Wrapper de ThirdWeb

@@ -1,6 +1,6 @@
 'use client';
 
-// SEGUNDO ARCHIVO
+import { Sepolia } from '@thirdweb-dev/chains';
 
 import {
   metamaskWallet,
@@ -8,6 +8,8 @@ import {
   coinbaseWallet,
   walletConnect,
 } from '@thirdweb-dev/react';
+
+const activeChain = Sepolia;
 
 export default function ThirdWebProviderWrapper({ children }) {
   return (
@@ -19,7 +21,8 @@ export default function ThirdWebProviderWrapper({ children }) {
         coinbaseWallet(),
         walletConnect(),
       ]}
-      clientId="0d9c103f07defb147154a7d2ccdc0196"
+      clientId={process.env.THIRDWEB_CLIENT_ID}
+      activeChain={activeChain}
     >
       {children}
     </ThirdwebProvider>
