@@ -1,13 +1,12 @@
 // import { Box } from '@chakra-ui/react';
 import { Text } from '@chakra-ui/react';
 import Counter from '../ui/main/Counter';
-import Cuadrito from '../ui/main/cuadrito';
+// import Navbar from '../ui/main/Navbar';
 
 export default function counterPage() {
   return (
-    <main className="h-screen ">
-      <Cuadrito className="h-1/6" />
-      <div className="flex justify-center items-center h-5/6">
+    <main>
+      <div className="flex justify-center items-center h-max">
         <div className="flex flex-col">
           <Text
             bgGradient="linear(to-l, #7928CA, #FF0080)"

@@ -1,5 +1,6 @@
 'use client';
 
+import { STORAGE_CONTRACT_ADDRESS } from '@/app/const/addresses';
 import {
   Web3Button,
   useAddress,
@@ -9,9 +10,8 @@ import {
 import { useState } from 'react';
 
 export default function Counter() {
-  const CONTRACT_ADDRESS = '0x3a71fBa729c2d1b78194BED68c695DC92753896A';
   const address = useAddress();
-  const { contract } = useContract(CONTRACT_ADDRESS);
+  const { contract } = useContract(STORAGE_CONTRACT_ADDRESS);
   const [newValue, setNewValue] = useState(0);
 
   const { data: numValue, isLoading } = useContractRead(contract, 'retrieve');
@@ -35,7 +35,7 @@ export default function Counter() {
               }}
             />
             <Web3Button
-              contractAddress={CONTRACT_ADDRESS}
+              contractAddress={STORAGE_CONTRACT_ADDRESS}
               action={(contract) => contract.call('store', [newValue])}
               onSubmit={() => setNewValue(0)}
               onSuccess={() => alert('Saved!')}

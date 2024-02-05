@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
 import ThirdWebProviderWrapper from './ui/ThirdWebProvider';
+// import Navbar from './ui/main/Navbar';
 // import ProviderWrapper from './ui/ProviderWrapper';
 // import Cuadrito from './ui/main/cuadrito';
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         Solo cuando refresco la url /counter
         Esta es la mejor combinacion para usar varios Wrappers
         */}
+
           {children}
         </body>
       </html>

@@ -1,26 +1,22 @@
 # Contratos Desplegados
 
-## Contrato Desplegado en la Cadena de Origen
+## Contratos Desplegados en Sepolia
 
-### 1. Prueba Con 3 Tokens
+### 1. Clasic storage
 
-> _2 desplegados (1 Fuji, 1 Sepolia)_
-
-**TokenizePropertyCrossChainPriceNFT** EJEMPLOS
+**Storage**
 
 - Dirección del Contrato[^1]:
-  0x8cc05f15f4f0ede1e1f813e1cea1552007e07e4e
-  0x8Cc05f15f4f0ede1E1f813E1cEa1552007E07E4e
+  0x3a71fBa729c2d1b78194BED68c695DC92753896A
 - Estado: Activo
-- Propósito: Facilitar la compra de tokens NFT en la cadena de origen utilizando la red Fuji de Chainlink para obtener tasas de cambio actualizadas.
+- Propósito: Facilitar el almacenamiento de un numero en blockchain, es el ejemplo que viene en el default de Remix
 
-**CrossDestinationMinter**
+**Raffle contract**
 
 - Dirección del Contrato[^1]:
-  0x242eedf22c038534ad957686fbf410ef035913cc
-  0x242eEDF22C038534ad957686Fbf410Ef035913cC
+  0xC7BaaEcD15D86D6D18c90db10698a452C318F2E3
 - Estado: Activo
-- Propósito: Facilitar la compra de tokens NFT en la cadena de origen utilizando la red Fuji de Chainlink para obtener tasas de cambio actualizadas.
+- Propósito: Facilita a los usuarios acceder a tiquets y obtar a obtener un premio a cambio(loteria).
 
 ## Contratos Desplegados en la Cadena de Destino (Fuji)
 

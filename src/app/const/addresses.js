@@ -3,3 +3,6 @@ export const RAFFLE_CONTRACT_ADDRESS =
 
 export const HERO_IMAGE_URL =
   'ipfs://QmS1gz2fNL6DfnfebNsY3KkdYh3vT4jcEArkndao6eCk5Z/Untitled%20design%20(14).png';
+
+export const STORAGE_CONTRACT_ADDRESS =
+  '0x3a71fBa729c2d1b78194BED68c695DC92753896A';
