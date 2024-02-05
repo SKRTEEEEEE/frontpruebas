@@ -1,10 +1,10 @@
 // import { Box } from '@chakra-ui/react';
 import { Text } from '@chakra-ui/react';
-// import Counter from '../ui/main/Counter';
+import Counter from '../../ui/main/Counter';
 // import ExampleClientComponent from '../ui/main/Example';
 // import Navbar from '../ui/main/Navbar';
 
-export default function web3Page() {
+export default function counterPage() {
   return (
     <main>
       <div className="flex justify-center items-center h-max">
@@ -15,8 +15,10 @@ export default function web3Page() {
             fontSize="6xl"
             fontWeight="extrabold"
           >
-            Welcome to Web3
+            Counter in Web3
           </Text>
+
+          <Counter />
         </div>
       </div>
     </main>

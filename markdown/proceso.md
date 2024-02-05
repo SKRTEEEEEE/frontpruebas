@@ -2,10 +2,13 @@
 
 ## Commits
 
+### NavigationWrapper
+
+Implementacion de un Wrapper encargado de la navegacion por las rutas
+
 ### Raffle p1
 
-Implementacion de un contrato de rifas, estoy por la mitad mas o menos(incluyendo dashboard)
-Paro para implementar un navigation funcional y agradable(flechas)
+Implementacion de un contrato de rifas, estoy por la mitad mas o menos
 
 ### 2wrappers
 
