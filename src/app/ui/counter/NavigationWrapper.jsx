@@ -4,7 +4,6 @@ import { SlArrowRight, SlArrowLeft } from 'react-icons/sl';
 import Link from 'next/link';
 // import { useRouter } from 'next/router'; // Cambiado de next/navigation a next/router
 import { usePathname } from 'next/navigation';
-import ExampleClientComponent from '../main/Example';
 
 export default function NavigationWrapper({ children }) {
   const path = usePathname();

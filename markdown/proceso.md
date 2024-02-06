@@ -2,6 +2,10 @@
 
 ## Commits
 
+### Raffle p2
+
+Implementacion del contrato de rifas basico (integracion) terminado. Falta acabar UI y comprobar ciertas funciones
+
 ### NavigationWrapper
 
 Implementacion de un Wrapper encargado de la navegacion por las rutas
@@ -30,6 +34,12 @@ En este commit se muestra la manera de integrar thirdweb con NextJs14 y su nuevo
 Tambien se hace uso de librerias Tailwind
 
 ## Tareas a Realizar
+
+falta para terminar rifas basico:
+
+- Comprobar que los NFT se puedan enviar al ganador (selectWinner) contract function.
+- Mejorar rutas frontend
+- Implementar wrapper chakra al admin dashboard o pasar a tailwind
 
 ### Tareas de Desarrollo
 
