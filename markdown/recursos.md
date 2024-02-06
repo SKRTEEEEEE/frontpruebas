@@ -25,6 +25,12 @@
 - [TailwindCss](https://tailwindcss.com/): Tailwind docs
 - [Chakra UI](https://chakra-ui.com/getting-started/nextjs-app-guide): Documentation de ChakraUI(integracion en NextJs)
 
-#### [ThirWebDocs](https://portal.thirdweb.com/): Documentación de ThirdWeb.
+#### [ThirWeb Docs](https://portal.thirdweb.com/): Documentación de ThirdWeb.
 
-- [ThirdWebDefaultChains](https://portal.thirdweb.com/react/v4/ThirdwebProvider#default-chains): Cadenas que admite por defecto el Wrapper de ThirdWeb
+- [DefaultChains](https://portal.thirdweb.com/react/v4/ThirdwebProvider#default-chains): Cadenas que admite por defecto el Wrapper de ThirdWeb
+
+#### [ThirdWeb Blog](https://blog.thirdweb.com/): Blog de la comunidad de desarrolladores de ThirdWeb.
+
+- [Update NFT metadata](https://blog.thirdweb.com/changelog/updating-and-freezing-nft-metadata/): Guía en la que se explica cómo actualizar los metadatos de una coleccion NFT de thirdweb
+
+#### [ThirdWeb Support](https://support.thirdweb.com/): Blog del desarollador?

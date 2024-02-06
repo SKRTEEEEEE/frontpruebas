@@ -1,5 +1,6 @@
 // import { Box } from '@chakra-ui/react';
 import { Text } from '@chakra-ui/react';
+import OwnedNFTs from '../ui/counter/OwnedNFTs';
 // import Counter from '../ui/main/Counter';
 // import ExampleClientComponent from '../ui/main/Example';
 // import Navbar from '../ui/main/Navbar';
@@ -17,6 +18,7 @@ export default function web3Page() {
           >
             Welcome to Web3
           </Text>
+          <OwnedNFTs />
         </div>
       </div>
     </main>

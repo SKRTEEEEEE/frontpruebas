@@ -2,6 +2,12 @@
 
 ## Commits
 
+### NFT Rutas protegidas
+
+- Hemos mejorado la navegacion incluyendo router.push() en los onClick
+- Hemos integrado las rutas protegidas para usuarios con los NFTs de membresia
+- Hemos creado una pantalla donde se muestra si tenemos el NFT de membresia
+
 ### BasicRaffle end
 
 - Comprobar que los NFT se puedan enviar al ganador (selectWinner) contract function.
@@ -41,6 +47,11 @@ Tambien se hace uso de librerias Tailwind
 
 ## Tareas a Realizar
 
-### Tareas de Desarrollo
+- [] NFT Free Request Join - _te dejara participar en una rifa de un nft de membresia anual_
+- [] RIFA NFT Membresia Anual - _rifa en la cual se puede participar con el nft Free Request Join_ - _uno gratis por usuario_ - _v2 añadir la posibilidad de comprar tickets aparte_
+- [x] NFT Membresia Anual - _nft que te permite el acceso a funcionalidades especificas -rutas protegidas-_
 
-## Tareas finalizadas
+### Notas
+
+Acordarse de hacer en la pagina donde se muestra el NFT de membresia la posibilidad de adquirir uno pagando con criptoactivos,
+y + en el futuro que tambien se pueda con Cash
