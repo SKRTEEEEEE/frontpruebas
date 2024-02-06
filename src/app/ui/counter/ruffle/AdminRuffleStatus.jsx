@@ -5,7 +5,7 @@ import { Box, Card, Input, Stack, Text } from '@chakra-ui/react';
 import { Web3Button, useContract, useContractRead } from '@thirdweb-dev/react';
 import { useState } from 'react';
 import { RAFFLE_CONTRACT_ADDRESS } from '@/app/const/addresses';
-import LotteryStatus from '../../main/RaffleStatus';
+import LotteryStatus from './RaffleStatus';
 
 export default function AdminLotteryStatusCard() {
   const { contract } = useContract(RAFFLE_CONTRACT_ADDRESS);

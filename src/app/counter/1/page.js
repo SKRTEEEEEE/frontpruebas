@@ -3,7 +3,7 @@
 import { HERO_IMAGE_URL, RAFFLE_CONTRACT_ADDRESS } from '@/app/const/addresses';
 import CurrentEntries from '@/app/ui/counter/ruffle/CurrentEntries';
 import PrizeNFT from '@/app/ui/counter/ruffle/PrizeNFT';
-import RaffleStatus from '@/app/ui/main/RaffleStatus';
+import RaffleStatus from '@/app/ui/counter/ruffle/RaffleStatus';
 import {
   Box,
   Button,

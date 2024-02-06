@@ -1,6 +1,6 @@
 // import { Box } from '@chakra-ui/react';
 import { Text } from '@chakra-ui/react';
-import Counter from '../../ui/main/Counter';
+import Counter from '../../ui/counter/Counter';
 // import ExampleClientComponent from '../ui/main/Example';
 // import Navbar from '../ui/main/Navbar';
 
