@@ -19,13 +19,17 @@ export default function NavigationWrapper({ children }) {
   }, [path]);
 
   const handleDecrement = () => {
-    setCounter(counter - 1);
-    router.push(`/counter/${pathEnd[counter]}`);
+    if (counter > 0) {
+      setCounter(counter - 1);
+      router.push(`/counter/${pathEnd[counter]}`);
+    }
   };
 
   const handleIncrement = () => {
-    setCounter(counter + 1);
-    router.push(`/counter/${pathEnd[counter]}`);
+    if (counter < 3) {
+      setCounter(counter + 1);
+      router.push(`/counter/${pathEnd[counter]}`);
+    }
   };
   const pathEnd = ['', 1, 2, 3];
 

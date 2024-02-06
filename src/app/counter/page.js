@@ -18,6 +18,7 @@ export default function web3Page() {
           >
             Welcome to Web3
           </Text>
+
           <OwnedNFTs />
         </div>
       </div>

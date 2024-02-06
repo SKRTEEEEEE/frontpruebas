@@ -3,6 +3,7 @@
 import { MEMBERSHIP_NFT_ADDRESS } from '@/app/const/addresses';
 import { useOwnedNFTs, useContract, useAddress } from '@thirdweb-dev/react';
 import Image from 'next/image';
+import BuyMemberNFT from './member-nft/BuyMemberNFT';
 
 export default function OwnedNFTs() {
   const address = useAddress();
@@ -18,7 +19,7 @@ export default function OwnedNFTs() {
       {error && <p>Error: {error.message}</p>}
       {isLoading && <p>Loading...</p>}
       {/* {data.length === 0 && <p>No Membership NFT yet</p>} */}
-      {data && data.length === 0 && <p>No NFTs owned</p>}
+      {data && data.length === 0 && <BuyMemberNFT />}
       {data &&
         data.map((nft, index) => (
           <div className="flex items-center" key={index}>
