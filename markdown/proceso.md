@@ -2,6 +2,14 @@
 
 ## Commits
 
+### Delete .env
+
+- Para eliminar el .env del rastreo, si ya se a subido a un repositorio en la nube:
+
+```sh
+git rm --cached nombre_del_archivo
+```
+
 ### NFT Free Request p1
 
 - Integrando y probando los contratos NFT y su integracion con web.
