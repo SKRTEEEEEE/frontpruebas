@@ -1,4 +1,8 @@
 // import { Box } from '@chakra-ui/react';
+import { FREE_REQ_NFT_ADDRESS } from '@/app/const/addresses';
+import NFTsCardsExamp from '@/app/ui/main/nft-cards/NFTsCardsExamp';
+// import ClaimNFTsCardExamp from '@/app/ui/main/nft-cards/ClaimNFTCard';
+
 import { Text } from '@chakra-ui/react';
 
 export default function freeRequestPage() {
@@ -14,6 +18,7 @@ export default function freeRequestPage() {
           >
             Free Request NFT
           </Text>
+          <NFTsCardsExamp nftContractAddress={FREE_REQ_NFT_ADDRESS} />
         </div>
       </div>
     </main>

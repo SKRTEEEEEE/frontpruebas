@@ -4,12 +4,13 @@
 
 ### 1. Clasic storage
 
-**Storage**
+**Free Request Membership draw**
 
 - Dirección del Contrato:
-  0x3a71fBa729c2d1b78194BED68c695DC92753896A
+  0x4A1495574709Fc9f8AA680edec0fc20b6058eF01
 - Estado: Activo
-- Propósito: Facilitar el almacenamiento de un numero en blockchain, es el ejemplo que viene en el default de Remix
+- Nombre colección: POST QUEEN420
+- Propósito: NFT que se puede intercambiar por tiquets para la **rifa de membresia anual** y obtar a obtener un NFT que te permite acceder a funcionalidades especificas(Membership NFT Contract).
 
 **Raffle contract**
 
@@ -24,6 +25,13 @@
   0xa6CB6BE78602Bdc111e035926D38D17057cdf45B
 - Estado: Activo
 - Propósito: Coleccion de NFTs de membresia, permite a los usuarios a acceder a ciertas rutas especificas y a funcionalidades exclusivas.
+
+**Storage**
+
+- Dirección del Contrato:
+  0x3a71fBa729c2d1b78194BED68c695DC92753896A
+- Estado: Activo
+- Propósito: Facilitar el almacenamiento de un numero en blockchain, es el ejemplo que viene en el default de Remix
 
 ## Contratos Desplegados en la Cadena de Destino (Fuji) EJEMPLO
 
