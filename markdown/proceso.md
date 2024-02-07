@@ -2,6 +2,13 @@
 
 ## Commits
 
+### NFT Free Request p1
+
+- Integrando y probando los contratos NFT y su integracion con web.
+- Estoy creando varias formas de traer los NFT con thirweb para ver cual es mas efectiva.
+- Voy a crear un componente personalizado (Card) para trae siempre los NFT de ciertas clases (ERC1155, ERC721?) _Porahi esta el link_
+- Falta tambien terminar el ClaimNFTCard para reclamar los NFT Free Request Join, y integrar el nuevo contrato ya creado de Free Request Join(con el componente reusable)
+
 ### NFT Members store
 
 - El usuario ahora si no tiene un NFT de membresia, le aparece la posibilidad de comprar uno en vez de mostrar cual tiene
@@ -51,8 +58,9 @@ Tambien se hace uso de librerias Tailwind
 
 ## Tareas a Realizar
 
--[] NFT Free Request Join - _te dejara participar en una rifa de un nft de membresia anual_
--[] RIFA NFT Membresia Anual - _rifa en la cual se puede participar con el nft Free Request Join_ - _uno gratis por usuario_ - _v2 añadir la posibilidad de comprar tickets aparte_ -[x] NFT Membresia Anual - _nft que te permite el acceso a funcionalidades especificas -rutas protegidas-_
+- [] NFT Free Request Join - _NFT que te dejara participar en una rifa de un nft de membresia anual_ - _sitio para reclamarlo y para verlo_
+- [] RIFA NFT Membresia Anual - _rifa en la cual se puede participar con el nft Free Request Join_ - _uno gratis por usuario_ - _v2 añadir la posibilidad de comprar tickets aparte_
+- [x] NFT Membresia Anual - _nft que te permite el acceso a funcionalidades especificas -rutas protegidas-_
 
 ### Notas
 

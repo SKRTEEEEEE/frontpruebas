@@ -25,7 +25,7 @@
 - Estado: Activo
 - Propósito: Coleccion de NFTs de membresia, permite a los usuarios a acceder a ciertas rutas especificas y a funcionalidades exclusivas.
 
-## Contratos Desplegados en la Cadena de Destino (Fuji)
+## Contratos Desplegados en la Cadena de Destino (Fuji) EJEMPLO
 
 1.  **CrossSourceMinterFiji**
 

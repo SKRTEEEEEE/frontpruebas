@@ -1,5 +1,6 @@
 // import { Text } from '@chakra-ui/react';
-import OwnedNFTs from '../ui/counter/OwnedNFTs';
+// import OwnedNFTs from '../ui/counter/OwnedNFTs';
+import MembershipNFTsExamp from '../ui/counter/MembershipNFTsExamp';
 import ProtectedRoutesMembers from '../ui/members/ProtectedRoutesMembers';
 
 export default function MembersPage() {
@@ -9,7 +10,7 @@ export default function MembersPage() {
         <div className="flex justify-center items-center h-max">
           <div className="flex flex-col">
             <section>Members page</section>
-            <OwnedNFTs />
+            <MembershipNFTsExamp />
           </div>
         </div>
       </main>
