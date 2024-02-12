@@ -19,8 +19,10 @@ import { parseIneligibility } from '@/app/utils/parseIneligibility';
 // import { myEditionDropContractAddress, tokenId } from "../const/yourDetails";
 
 const BuyMemberNFT = () => {
+  //Esta modificado el quantity para que solo mintee uno, limpio el front desde este punto
   const address = useAddress();
-  const [quantity, setQuantity] = useState(1);
+  // const [quantity, setQuantity] = useState(1);
+  const quantity = 1;
   const { contract: editionDrop } = useContract(MEMBERSHIP_NFT_ADDRESS);
   const { data: contractMetadata } = useContractMetadata(editionDrop);
   const tokenId = 0;
@@ -31,7 +33,8 @@ const BuyMemberNFT = () => {
     address,
     tokenId
   );
-  const claimerProofs = useClaimerProofs(editionDrop, address || '', tokenId);
+  //Funcion para saber cuantos se pueden reclamar aun
+  // const claimerProofs = useClaimerProofs(editionDrop, address || '', tokenId);
   const claimIneligibilityReasons = useClaimIneligibilityReasons(
     editionDrop,
     {
@@ -78,61 +81,61 @@ const BuyMemberNFT = () => {
     quantity,
   ]);
 
-  const maxClaimable = useMemo(() => {
-    let bnMaxClaimable;
-    try {
-      bnMaxClaimable = BigNumber.from(
-        activeClaimCondition.data?.maxClaimableSupply || 0
-      );
-    } catch (e) {
-      bnMaxClaimable = BigNumber.from(1_000_000);
-    }
+  // const maxClaimable = useMemo(() => {
+  //   let bnMaxClaimable;
+  //   try {
+  //     bnMaxClaimable = BigNumber.from(
+  //       activeClaimCondition.data?.maxClaimableSupply || 0
+  //     );
+  //   } catch (e) {
+  //     bnMaxClaimable = BigNumber.from(1_000_000);
+  //   }
 
-    let perTransactionClaimable;
-    try {
-      perTransactionClaimable = BigNumber.from(
-        activeClaimCondition.data?.maxClaimablePerWallet || 0
-      );
-    } catch (e) {
-      perTransactionClaimable = BigNumber.from(1_000_000);
-    }
+  //   let perTransactionClaimable;
+  //   try {
+  //     perTransactionClaimable = BigNumber.from(
+  //       activeClaimCondition.data?.maxClaimablePerWallet || 0
+  //     );
+  //   } catch (e) {
+  //     perTransactionClaimable = BigNumber.from(1_000_000);
+  //   }
 
-    if (perTransactionClaimable.lte(bnMaxClaimable)) {
-      bnMaxClaimable = perTransactionClaimable;
-    }
+  //   if (perTransactionClaimable.lte(bnMaxClaimable)) {
+  //     bnMaxClaimable = perTransactionClaimable;
+  //   }
 
-    const snapshotClaimable = claimerProofs.data?.maxClaimable;
+  //   const snapshotClaimable = claimerProofs.data?.maxClaimable;
 
-    if (snapshotClaimable) {
-      if (snapshotClaimable === '0') {
-        // allowed unlimited for the snapshot
-        bnMaxClaimable = BigNumber.from(1_000_000);
-      } else {
-        try {
-          bnMaxClaimable = BigNumber.from(snapshotClaimable);
-        } catch (e) {
-          // fall back to default case
-        }
-      }
-    }
+  //   if (snapshotClaimable) {
+  //     if (snapshotClaimable === '0') {
+  //       // allowed unlimited for the snapshot
+  //       bnMaxClaimable = BigNumber.from(1_000_000);
+  //     } else {
+  //       try {
+  //         bnMaxClaimable = BigNumber.from(snapshotClaimable);
+  //       } catch (e) {
+  //         // fall back to default case
+  //       }
+  //     }
+  //   }
 
-    let max;
-    if (totalAvailableSupply.lt(bnMaxClaimable)) {
-      max = totalAvailableSupply;
-    } else {
-      max = bnMaxClaimable;
-    }
+  //   let max;
+  //   if (totalAvailableSupply.lt(bnMaxClaimable)) {
+  //     max = totalAvailableSupply;
+  //   } else {
+  //     max = bnMaxClaimable;
+  //   }
 
-    if (max.gte(1_000_000)) {
-      return 1_000_000;
-    }
-    return max.toNumber();
-  }, [
-    claimerProofs.data?.maxClaimable,
-    totalAvailableSupply,
-    activeClaimCondition.data?.maxClaimableSupply,
-    activeClaimCondition.data?.maxClaimablePerWallet,
-  ]);
+  //   if (max.gte(1_000_000)) {
+  //     return 1_000_000;
+  //   }
+  //   return max.toNumber();
+  // }, [
+  //   claimerProofs.data?.maxClaimable,
+  //   totalAvailableSupply,
+  //   activeClaimCondition.data?.maxClaimableSupply,
+  //   activeClaimCondition.data?.maxClaimablePerWallet,
+  // ]);
 
   const isSoldOut = useMemo(() => {
     try {
@@ -265,26 +268,22 @@ const BuyMemberNFT = () => {
                 </div>
               ) : (
                 <>
-                  <p>Quantity</p>
-                  <div className={styles.quantityContainer}>
-                    <button
+                  <h4>Quantity: <strong>{quantity}</strong></h4>
+                  {/*<div className={styles.quantityContainer}>
+                     <button
                       className={`${styles.quantityControlButton}`}
                       onClick={() => setQuantity(quantity - 1)}
                       disabled={quantity <= 1}
                     >
                       -
-                    </button>
-
-                    <h4>{quantity}</h4>
-
-                    <button
+                    </button>  <button
                       className={`${styles.quantityControlButton}`}
                       onClick={() => setQuantity(quantity + 1)}
                       disabled={quantity >= maxClaimable}
                     >
-                      +
+                      + 
                     </button>
-                  </div>
+                  </div>*/}
 
                   <div className={styles.mintContainer}>
                     {isSoldOut ? (

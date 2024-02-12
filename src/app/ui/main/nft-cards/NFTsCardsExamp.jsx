@@ -5,6 +5,7 @@ import { useAddress, useContract, useOwnedNFTs } from '@thirdweb-dev/react';
 // import { MEMBERSHIP_NFT_ADDRESS } from '@/app/const/addresses';
 import NFTCard from './NFTCard';
 import ClaimNFTsCardExamp from './ClaimNFTCard';
+import ConnectWalletButton from '../ConnectWallet';
 
 export default function NFTsCardsExamp({ nftContractAddress }) {
   /*Hay que tener en cuenta que cuando se mintea un NFT(ClaimNFTsCardExample),
@@ -21,19 +22,9 @@ export default function NFTsCardsExamp({ nftContractAddress }) {
     contract,
     address
   );
-  console.log(
-    'ownedNFTs',
-    ownedNFTs,
-    'length',
-    ownedNFTs?.length,
-    'address:',
-    address,
-    'nftContractAddress: ',
-    nftContractAddress
-  );
   return (
     <div>
-      {ownedNFTsLoading ? (
+      {address ? (ownedNFTsLoading ? (
         <p>Loading...</p>
       ) : ownedNFTs && ownedNFTs.length > 0 ? (
         ownedNFTs.map((nft) => {
@@ -47,7 +38,13 @@ export default function NFTsCardsExamp({ nftContractAddress }) {
         })
       ) : (
         <ClaimNFTsCardExamp nftContractAddress={nftContractAddress} />
+      )) : (
+        <div>
+      <p>Load your address</p>
+      <ConnectWalletButton/>
+      </div>
       )}
+     
     </div>
   );
 }

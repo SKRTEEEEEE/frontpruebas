@@ -2,6 +2,11 @@
 
 ## Commits
 
+### En clase(varias partes)
+
+- p1: Mostrar un mensaje para logearse en los NFTs, y acer mas condicionales para cuando el usuario no se haya logeado no caiga
+      Protected NFT routes -> hechar cuando no haya una billetera tmb
+
 ### NFT Free Request p2
 
 - NFTsCardsExamp.jsx: Componente que a trabes de sus props(pasandole el contrato dela coleccion NFT que se va a usar) permite:
@@ -72,19 +77,22 @@ Tambien se hace uso de librerias Tailwind
 
 ## Tareas a Realizar
 
-### Tareas actuales
+### Rifa pago con NFT gratis
+
+Rifa la cual los usuarios podran adquirin un ticket en cada rifa que se realize de forma gratuita, para eso,  quemar un NFT que se habra reclamado previamente.
 
 - [ ] NFT Free Request Join - _NFT que te dejara participar en una rifa de un nft de membresia anual_ - _sitio para reclamarlo y para verlo_
   - [ ] Falta comprobar/crear funcionalidad de quemar el NFT a cambio de participar en la rifa
 - [ ] RIFA NFT Membresia Anual - _rifa en la cual se puede participar con el nft Free Request Join_ - _uno gratis por usuario_ - _v2 añadir la posibilidad de comprar tickets aparte_
 - [x] NFT Membresia Anual - _nft que te permite el acceso a funcionalidades especificas -rutas protegidas-_
 
+### Probar a implantar la logica de admin + mostrar NFT con el contrato personalizado.
+
 ### Ideas Futuro
 
 ### Notas
 
-Comprobar cual de las dos formas de traer y de vender los NFTs
-->Mejorar la funcioinalidad en el caso de que el usuario no haya puesto su wallet(Aparece loading)
 ->Mejorar la funcionalidad de estos(Limpiar la parte del css/frontend NftStore Membresia tmb)
+    falta limpiar solo el css
 **Comprobar que en la pagina donde se muestra el NFT de membresia la posibilidad de adquirir uno pagando con criptoactivos**,
 y + en el futuro que tambien se pueda con Cash
