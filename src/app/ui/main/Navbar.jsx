@@ -10,6 +10,7 @@ function Navbar() {
         <div>
           Hola, esto es el navbar de un proyecto <Link href="/">web3</Link>
         </div>
+        <div><Link href="/projects">03.2024</Link></div>
         <div className="flex sm:gap-8 items-center">
           <AdminDashbButton />
           <ConnectWalletButton />
